@@ -7,17 +7,30 @@
   metadata-complete="true">
 
   <servlet>
-    <servlet-name>IndexServlet</servlet-name>
-    <servlet-class>dbconsample.servlet.IndexServlet</servlet-class>
+    <servlet-name>InquiryServlet</servlet-name>
+    <servlet-class>dbconsample.servlet.InquiryServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>IndexServlet</servlet-name>
-    <url-pattern>/</url-pattern>
+    <servlet-name>InquiryServlet</servlet-name>
+    <url-pattern>/inquiry</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ModifyServlet</servlet-name>
+    <servlet-class>dbconsample.servlet.ModifyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifyServlet</servlet-name>
+    <url-pattern>/modify</url-pattern>
   </servlet-mapping>
   
   <init-param>
     <param-name>javaEncoding</param-name>
     <param-value>UTF-8</param-value>
   </init-param>
+  
+  <welcome-file-list>
+    <welcome-file>/jsp/index.jsp</welcome-file>
+  </welcome-file-list>
 
 </web-app>

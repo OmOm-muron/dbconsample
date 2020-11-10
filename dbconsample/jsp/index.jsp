@@ -5,26 +5,21 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>DB接続テスト</title>
+    <title>DB Connection Sample</title>
   </head>
   
   <body>
     <!--header-->
     <header align="center">
-      <h1>DB接続テスト</h1>
+      <h1>DB Connection Sample</h1>
     </header>
     
     <main align="center">
-      <table border="1">
-        <tr>
-          <th>ユーザー名</th>
-          <th>パスワード</th>
-        </tr>
-        <tr>
-          <td><c:out value="${username}"/></td>
-          <td><c:out value="${userpasswd}"/></td>
-        </tr>
-      </table>
+      <ul>
+        <li><a href="inquiry?mode=ls">LIST</a></li>
+        <li><a href="inquiry?mode=word">SEARCH</a></li>
+        <li><a href="modify?mode=ins">INSERT</a></li>
+      </ul>
     </main>
     
   </body>
