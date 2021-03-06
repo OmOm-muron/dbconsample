@@ -1,5 +1,5 @@
 # dbconsample
-After checkout this project, following operations are required before develop this project.
+After checkout/download this project, following operations are required before develop this project.
 1. Install postgresql database on your computer.
 2. Create database named "sample" from pgAdmin or psql.  
 From psql, start cmd or powershell and execute following commands.
